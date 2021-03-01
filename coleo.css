@@ -1,0 +1,143 @@
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    -webkit-font-smoothing: antialiased;
+    background-color:floralwhite;
+  }
+  #main_view{
+    height: 549px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
+  #left_text{
+    font-size: 80px;
+    height:100px;
+    width:100px;
+    position: absolute;
+    opacity:0;
+  }
+  #right_text_bot_first{
+    font-size: 50px;
+    position: absolute;
+    opacity:0;
+    height:200px;
+    width:200px;
+  }
+  #right_text_bot_first:hover{
+    position: absolute;
+    margin-top:110px;
+    margin-left:-10px;
+    font-size:12px;
+    transform:rotate(270deg);
+    color:black;
+    opacity:1;
+  }
+  #right_text_top{
+    font-size: 40px;
+    height:200px;
+    width:500px;
+    position: absolute;
+    opacity:0;
+  }
+  #right_text_top:hover{
+    position: absolute;
+    margin-top:100px;
+    margin-left:-160px;
+    font-size:15px;
+    transform:rotate(270deg);
+    color:black;
+    opacity:1;
+  }
+  #left_text:hover{
+    position: absolute;
+    margin-top:430px;
+    margin-left:-20px;
+    font-size:20px;
+    transform:rotate(270deg);
+    color:black;
+    opacity:1;
+  }
+  #left_view_inside{
+    margin-right: 30px;
+    width:585px;
+    height: 549px;
+    
+  }
+  #left_view_inside img{
+    width:585px;
+    height: 549px;
+   
+  }
+  #right_inside{
+    width:585px;
+    height: 549px;
+    flex-direction: column;
+  }
+  #right_inside_top{
+    width:585px;
+    height: 259px;
+   
+  }
+  #right_inside_top img{
+    width:585px;
+    height: 259px;
+  }
+  #right_inside_top .box{
+    width:585px;
+    height: 259px;
+  }
+  #right_inside_bot{
+    width:585px;
+    height: 260px;
+    margin-top: 30px;
+    display:flex;
+    justify-content: center;
+  }
+  #right_inside_bot_first{
+    width:290px;
+    height: 260px;
+    margin-right: 30px;
+  }
+  #right_inside_bot_first img{
+    width:278.5px;
+    height: 260px; 
+  }
+  #right_inside_bot_first .box{
+    width:278.5px;
+    height: 260px; 
+  }
+  #right_inside_bot_second img{
+    width:278.5px;
+    height: 260px;
+  }
+  #right_inside_bot_second .box{
+    width:278.5px;
+    height: 260px;
+  }
+  .box-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  }
+  .box{
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  transition:.2s all; 
+  }
+  #left_view_inside .box{
+    width:585px;
+    height: 549px;
+  }
+  .box-wrap:hover .box{
+  opacity:.5;
+  box-shadow:none;
+  }
+  .box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+  
+  }
