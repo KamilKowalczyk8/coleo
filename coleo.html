@@ -1,10 +1,19 @@
 <html>
     <head>
         <script src="https://kit.fontawesome.com/fb1aae2fc7.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="coleo.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" 
+        integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" 
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.3.0/dist/css/glide.core.min.css">
+        <script src="https://unpkg.com/@glidejs/glide@3.3.0/dist/glide.min.js"></script>
     </head>
     <body>
+    <div id="first_main_view">
     <div class="box-wrap">
       <div id="main_view">
 
@@ -53,5 +62,36 @@
 
       </div>
     </div>
-    </body>
+  </div>
+    <div id="second_main_view">
+      <div id="second_top_view">Top Products</div>
+      <div id="second_bot_view">
+
+
+        
+        <div class="second_middle_view">
+          <div class="glide__arrows" data-glide-el="controls">
+            <button id="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left fa-5x" ></i></button>
+           
+            <div data-glide-el="track" class="glide__track">
+              
+              <ul class="glide__slides">
+               
+                  <li class="glide__slide"><img src="1.1.jpg"> <img src="1.2.jpg"><img src="1.3.jpg"><img src="1.4.jpg"></li> 
+                  <li class="glide__slide"><img src="1.4.jpg"><img src="2.2.jpg"><img src="2.3.jpg"><img src="2.4.jpg"></li>
+                  <li class="glide__slide"><img src="2.4.jpg"><img src="3.2.jpg"><img src="3.3.jpg"><img src="3.4.jpg"></li>
+                  <li class="glide__slide"><img src="1.4.jpg"><img src="1.3.jpg"><img src="1.2.jpg"><img src="1.1.jpg"></li>
+                  
+              </ul>
+          </div>
+            <button id="button1"class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right fa-5x"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      new Glide('.second_middle_view').mount()
+    </script>
+  </body>
+    
     
